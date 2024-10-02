@@ -1,0 +1,16 @@
+SQL Queries
+
+Please write a query which has population over 12,500 in America (CountryCode for America is USA)
+
+
+select * from CITY where COUNTRYCODE = 'USA' AND POPULATION >= '12500';
+
+
+Write a query to get the list of all Products with locations which have transactions in March 2021. 
+
+
+
+select prod.product_id, prod.product_name, prod.sell_price,loc.location_id, loc.location_name, loc.city, trans.transaction_id, tran.transaction_date, tran.amount from location loc
+inner join transactions tran on tran.location_id = loc.location_id
+inner join products prod on prod.product_id = tran.product_id
+where tran.transaction_date >= '2021-03-01' ORDER BY tran.transaction_date ASC;
