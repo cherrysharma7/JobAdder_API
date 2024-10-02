@@ -14,3 +14,10 @@ The CSV files are named as lat_lon_test.csv & post_codes_test.csv
 2. Go on a collection level -> select lat_lon_test -> select the data file 
 as in csv file -> Run Assesment_jobadder
 3.Go on a collection level -> select postal_code_test -> select the data file as in csv file -> Run Assesment_jobadder
+
+===========================================================================
+```I have created a javaScript file to impliment , find out the sum of its digits, using recursion````
+---The output of the program depends on the number user have input.----
+``how to run output ``
+1. Install node in your local.
+2. In your terminal "node recursion.js" the output will be shown.
